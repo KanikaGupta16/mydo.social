@@ -96,7 +96,7 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #8e2222;
+  background: #780000;
   color: #FDF0D5;
 }
 .btn-primary:active {
@@ -112,11 +112,11 @@ h6, .h6 {
 
 .btn-transparent {
   background: transparent;
-  color: #8e2222;
+  color: #780000;
   font-weight: bold;
 }
 .btn-transparent:active, .btn-transparent:hover {
-  color: #8e2222;
+  color: #780000;
 }
 
 body {
@@ -178,11 +178,11 @@ select:focus {
 }
 
 a.text-dark:hover {
-  color: #8e2222 !important;
+  color: #780000 !important;
 }
 
 a:hover {
-  color: #8e2222;
+  color: #780000;
 }
 
 .slick-slide {
@@ -228,7 +228,7 @@ a:hover {
 }
 
 .bg-primary {
-  background: #8e2222 !important;
+  background: #780000 !important;
 }
 
 .bg-gray {
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #8e2222 !important;
+  color: #780000 !important;
 }
 
 .text-color {
@@ -369,7 +369,7 @@ a:hover {
   height: 60px;
 }
 .form-control:focus {
-  border-color: #8e2222;
+  border-color: #780000;
   outline: 0;
   box-shadow: none !important;
 }
@@ -396,7 +396,7 @@ textarea.form-control {
   transition: 0.3s ease;
 }
 .navigation.nav-bg {
-  background-color: #8e2222;
+  background-color: #780000;
   padding: 15px 100px;
 }
 @media (max-width: 991px) {
@@ -407,7 +407,7 @@ textarea.form-control {
 @media (max-width: 991px) {
   .navigation {
     padding: 20px;
-    background: #8e2222;
+    background: #780000;
   }
 }
 
@@ -561,7 +561,7 @@ textarea.form-control {
   transition: 0.3s ease;
 }
 .hover-bg-primary:hover {
-  background: #8e2222;
+  background: #780000;
 }
 .hover-bg-primary:hover * {
   color: #FDF0D5;
@@ -569,7 +569,7 @@ textarea.form-control {
 
 .active-bg-primary {
   transition: 0.3s ease;
-  background: #8e2222;
+  background: #780000;
 }
 .active-bg-primary * {
   color: #FDF0D5;
@@ -703,7 +703,7 @@ blockquote {
   display: inline-block;
   padding: 20px 25px;
   background: #eaeaea;
-  border-left: 3px solid #8e2222;
+  border-left: 3px solid #780000;
   font-style: italic;
   font-size: 22px;
   line-height: 1.7;
@@ -834,11 +834,11 @@ blockquote {
 
 /* Custom background colors */
 .bg-purple {
-  background-color: #9473e6; /* Purple color */
+  background-color: #780000; /* Purple color */
 }
 
 .bg-yellow {
-  background-color: #fdb157; /* Yellow color */
+  background-color: #780000; /* Yellow color */
 }
 
 /* White text */
@@ -863,3 +863,100 @@ blockquote {
 }
 
 /*# sourceMappingURL=style.css.map */
+/* Custom button styles */
+.btn-primary {
+  background-color: #780000; /* Purple */
+  border-color: #780000;
+}
+
+.btn-primary:hover {
+  background-color: #780000; /* Darker purple on hover */
+  border-color: #780000;
+}
+
+.btn-secondary {
+  background-color: #780000; /* Yellow */
+  border-color: #780000;
+}
+
+.btn-secondary:hover {
+  background-color: #780000; /* Darker yellow on hover */
+  border-color: #780000;
+}
+/* Join Our Network Section */
+.join-network-section {
+  background-color: #780000;
+  padding: 80px 0;
+}
+
+.join-network-section .section-title {
+  color: #fff;
+}
+
+.join-network-section p {
+  font-size: 1.25rem;
+  color: #FDF0D5;
+  margin-top: -10px;
+}
+
+.join-network-section .btn {
+  background-color: #FDF0D5;
+  color: #000;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.join-network-section .btn:hover {
+  background-color: #e0d2b8; /* Slightly darker beige on hover */
+}
+.col-lg-1\/5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/* Hover effect for sponsor logos */
+.sponsor-logo:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for club logos */
+.club-logo:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 991.98px) {
+  .col-lg-1\/5 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .col-lg-1\/5 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+content-box {
+  transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.text-white {
+  color: #FDF0D5 !important;
+}
+

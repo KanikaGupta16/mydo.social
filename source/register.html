@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Register - MYDO</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .type-selector {
+        background-color: #FDF0D5;
+        border: none;
+        padding: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .type-selector:hover {
+        background-color: #C1121F;
+        transform: translateY(-5px);
+    }
+
+    .type-selector i {
+        color: #000000;
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .type-selector:hover i {
+        color: #FDF0D5;
+    }
+
+    .type-selector h4 {
+        color: #000000;
+        margin: 10px 0;
+        font-weight: 600;
+    }
+
+    .type-selector:hover h4 {
+        color: #FDF0D5;
+    }
+
+    .type-selector p {
+        color: #000000;
+        margin-bottom: 0;
+    }
+
+    .type-selector:hover p {
+        color: #FDF0D5;
+    }
+
+    .fixed-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #780000;
+        padding: 1rem 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo-container {
+        max-width: 150px;
+    }
+
+    .logo-container img {
+        width: 100%;
+        height: auto;
+    }
+  </style>
+</head>
+<body style="background-color: #780000;">
+
+<header class="fixed-navbar">
+  <div class="container">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="MYDO Logo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="margin-top: 120px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="text-center mb-5">
+          <h3 style="color: #FDF0D5;">Choose Your Account Type</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <a href="register-club.html">
+              <div class="type-selector rounded shadow">
+                <i class="ti-user mb-3"></i>
+                <h4>Student Organization</h4>
+                <p class="mb-0">Register your club or organization</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 mb-3">
+            <a href="register-company.html">
+              <div class="type-selector rounded shadow">
+                <i class="ti-briefcase mb-3"></i>
+                <h4>Company/Sponsor</h4>
+                <p class="mb-0">Register as a sponsoring organization</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+</body>
+</html>

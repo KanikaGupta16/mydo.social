@@ -1,0 +1,172 @@
+.
+├── about.html
+├── blog-single.html
+├── blog.html
+├── club-dashboard.html
+├── contact.html
+├── css
+│   ├── style.css
+│   └── style.css.map
+├── fonts
+│   ├── Kartikey_s_Resume.pdf
+│   ├── MYDO Club onboarding form - Google Forms.pdf
+│   ├── open-sauce
+│   │   ├── Open Sauce One OFL.txt
+│   │   ├── Open Sauce Sans OFL.txt
+│   │   ├── Open Sauce Two OFL.txt
+│   │   ├── OpenSauceOne-Black.ttf
+│   │   ├── OpenSauceOne-BlackItalic.ttf
+│   │   ├── OpenSauceOne-Bold.ttf
+│   │   ├── OpenSauceOne-BoldItalic.ttf
+│   │   ├── OpenSauceOne-ExtraBold.ttf
+│   │   ├── OpenSauceOne-ExtraBoldItalic.ttf
+│   │   ├── OpenSauceOne-Italic.ttf
+│   │   ├── OpenSauceOne-Light.ttf
+│   │   ├── OpenSauceOne-LightItalic.ttf
+│   │   ├── OpenSauceOne-Medium.ttf
+│   │   ├── OpenSauceOne-MediumItalic.ttf
+│   │   ├── OpenSauceOne-Regular.ttf
+│   │   ├── OpenSauceOne-SemiBold.ttf
+│   │   ├── OpenSauceOne-SemiBoldItalic.ttf
+│   │   ├── OpenSauceSans-Black.ttf
+│   │   ├── OpenSauceSans-BlackItalic.ttf
+│   │   ├── OpenSauceSans-Bold.ttf
+│   │   ├── OpenSauceSans-BoldItalic.ttf
+│   │   ├── OpenSauceSans-ExtraBold.ttf
+│   │   ├── OpenSauceSans-ExtraBoldItalic.ttf
+│   │   ├── OpenSauceSans-Italic.ttf
+│   │   ├── OpenSauceSans-Light.ttf
+│   │   ├── OpenSauceSans-LightItalic.ttf
+│   │   ├── OpenSauceSans-Medium.ttf
+│   │   ├── OpenSauceSans-MediumItalic.ttf
+│   │   ├── OpenSauceSans-Regular.ttf
+│   │   ├── OpenSauceSans-SemiBold.ttf
+│   │   ├── OpenSauceSans-SemiBoldItalic.ttf
+│   │   ├── OpenSauceTwo-Black.ttf
+│   │   ├── OpenSauceTwo-BlackItalic.ttf
+│   │   ├── OpenSauceTwo-Bold.ttf
+│   │   ├── OpenSauceTwo-BoldItalic.ttf
+│   │   ├── OpenSauceTwo-ExtraBold.ttf
+│   │   ├── OpenSauceTwo-ExtraBoldItalic.ttf
+│   │   ├── OpenSauceTwo-Italic.ttf
+│   │   ├── OpenSauceTwo-Light.ttf
+│   │   ├── OpenSauceTwo-LightItalic.ttf
+│   │   ├── OpenSauceTwo-Medium.ttf
+│   │   ├── OpenSauceTwo-MediumItalic.ttf
+│   │   ├── OpenSauceTwo-Regular.ttf
+│   │   ├── OpenSauceTwo-SemiBold.ttf
+│   │   └── OpenSauceTwo-SemiBoldItalic.ttf
+│   └── open-sauce.zip
+├── images
+│   ├── about
+│   │   ├── author.jpg
+│   │   └── signature.png
+│   ├── backgrounds
+│   │   ├── bg-dots.png
+│   │   ├── education-bg.png
+│   │   ├── map.png
+│   │   └── team-bg.png
+│   ├── blog
+│   │   ├── post-1.jpg
+│   │   ├── post-2.jpg
+│   │   ├── post-3.jpg
+│   │   ├── post-4.jpg
+│   │   ├── post-5.jpg
+│   │   └── post-6.jpg
+│   ├── clients-logo
+│   │   ├── client-logo-1.png
+│   │   ├── client-logo-2.png
+│   │   ├── client-logo-3.png
+│   │   ├── client-logo-4.png
+│   │   └── client-logo-5.png
+│   ├── experience
+│   │   ├── icon-1.png
+│   │   ├── icon-2.png
+│   │   └── icon-3.png
+│   ├── favicon.png
+│   ├── icons
+│   │   ├── design.png
+│   │   ├── plan.png
+│   │   └── print.png
+│   ├── illustrations
+│   │   ├── dots-cyan.png
+│   │   ├── dots-group-cyan.png
+│   │   ├── dots-group-orange.png
+│   │   ├── dots-group-sm.png
+│   │   ├── dots-group-v.png
+│   │   ├── dots-orange.png
+│   │   ├── leaf-bg-top.png
+│   │   ├── leaf-bg.png
+│   │   ├── leaf-cyan-2.png
+│   │   ├── leaf-cyan-lg.png
+│   │   ├── leaf-cyan.png
+│   │   ├── leaf-orange.png
+│   │   ├── leaf-pink-round.png
+│   │   ├── leaf-pink.png
+│   │   ├── leaf-yellow.png
+│   │   └── page-title.png
+│   ├── logo.png
+│   ├── orgs
+│   │   ├── club1.png
+│   │   ├── club2.png
+│   │   ├── club3.png
+│   │   ├── club4.png
+│   │   └── club5.png
+│   ├── portfolio
+│   │   ├── item1.png
+│   │   ├── item2.png
+│   │   ├── item3.png
+│   │   ├── item4.png
+│   │   ├── item5.png
+│   │   ├── item6.png
+│   │   ├── item7.png
+│   │   └── item8.png
+│   ├── progress-wave.png
+│   ├── sponsor
+│   │   ├── IMG_8817 - Mia Ramirez Gutierrez.png
+│   │   ├── Screenshot 2025-02-05 at 6.02.33 PM - Evan Albright.png
+│   │   └── nittanyentrepreneursociety_logo - Ethan Shakour.jpg
+│   ├── team
+│   │   ├── member-1.png
+│   │   ├── member-2.png
+│   │   └── member-3.png
+│   ├── testimonial
+│   │   └── client-1.png
+│   ├── user-1.jpg
+│   ├── user-2.jpg
+│   └── user-3.jpg
+├── index.html
+├── js
+│   └── script.js
+├── login.html
+├── plugins
+│   ├── bootstrap
+│   │   ├── bootstrap.min.css
+│   │   └── bootstrap.min.js
+│   ├── jQuery
+│   │   └── jquery.min.js
+│   ├── shuffle
+│   │   └── shuffle.min.js
+│   ├── slick
+│   │   ├── ajax-loader.gif
+│   │   ├── fonts
+│   │   │   ├── slick.eot
+│   │   │   ├── slick.svg
+│   │   │   ├── slick.ttf
+│   │   │   └── slick.woff
+│   │   ├── slick.css
+│   │   └── slick.min.js
+│   └── themify-icons
+│       ├── fonts
+│       │   ├── themify.eot
+│       │   ├── themify.svg
+│       │   ├── themify.ttf
+│       │   └── themify.woff
+│       └── themify-icons.css
+├── portfolio.html
+├── register-club.html
+├── register-company.html
+├── register.html
+└── structure.txt
+
+26 directories, 144 files

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard - Student Organization Platform</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body style="background-color: #780000;">
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/logo.png" alt="Myself"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="logout()" style="color: #FDF0D5;">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section class="section" style="margin-top: 100px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4">
+        <!-- Sidebar -->
+        <div class="rounded p-4 shadow-down mb-4" style="background-color: #780000; border: 1px solid #FDF0D5;">
+          <h4 class="mb-4" style="color: #FDF0D5;">Navigation</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a href="#" style="color: #FDF0D5;">Dashboard</a></li>
+            <li class="mb-3"><a href="#" style="color: #FDF0D5;">Profile</a></li>
+            <li class="mb-3"><a href="#" style="color: #FDF0D5;">Messages</a></li>
+            <li class="mb-3"><a href="#" style="color: #FDF0D5;">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-lg-9 col-md-8">
+        <!-- Main Content -->
+        <div class="rounded p-4 shadow-down" style="background-color: #780000; border: 1px solid #FDF0D5;">
+          <h2 class="mb-4" style="color: #FDF0D5;">Welcome to Your Dashboard</h2>
+          
+          <!-- Quick Stats -->
+          <div class="row mb-4">
+            <div class="col-md-4 mb-4">
+              <div class="card" style="background-color: #780000; border: 1px solid #FDF0D5;">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #FDF0D5;">Active Campaigns</h5>
+                  <p class="card-text display-4" style="color: #FDF0D5;">3</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card" style="background-color: #780000; border: 1px solid #FDF0D5;">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #FDF0D5;">Connected Sponsors</h5>
+                  <p class="card-text display-4" style="color: #FDF0D5;">8</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card" style="background-color: #780000; border: 1px solid #FDF0D5;">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #FDF0D5;">Total Funding</h5>
+                  <p class="card-text display-4" style="color: #FDF0D5;">$12k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Recent Activity -->
+          <h4 class="mb-4" style="color: #FDF0D5;">Recent Activity</h4>
+          <div class="list-group">
+            <div class="list-group-item list-group-item-action" style="background-color: #780000; border: 1px solid #FDF0D5;">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" style="color: #FDF0D5;">New Sponsor Connection</h5>
+                <small style="color: #FDF0D5;">3 days ago</small>
+              </div>
+              <p class="mb-1" style="color: #FDF0D5;">Tech Corp has accepted your connection request.</p>
+            </div>
+            <div class="list-group-item list-group-item-action" style="background-color: #780000; border: 1px solid #FDF0D5;">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1" style="color: #FDF0D5;">Campaign Update</h5>
+                <small style="color: #FDF0D5;">1 week ago</small>
+              </div>
+              <p class="mb-1" style="color: #FDF0D5;">Spring Festival campaign has reached 75% of its goal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<script>
+// Check if user is logged in
+if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+  window.location.href = 'login.html';
+}
+
+function logout() {
+  sessionStorage.removeItem('isLoggedIn');
+  window.location.href = 'login.html';
+}
+</script>
+
+</body>
+</html>

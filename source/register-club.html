@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Club Registration - MYDO</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .form-section {
+      background-color: #780000;
+      border: 1px solid #FDF0D5;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .form-control {
+      background-color: transparent !important;
+      border: 1px solid #FDF0D5 !important;
+      color: #FDF0D5 !important;
+      margin-bottom: 1rem;
+    }
+
+    .form-control::placeholder {
+      color: rgba(253, 240, 213, 0.7) !important;
+    }
+
+    .form-label {
+      color: #FDF0D5;
+      margin-bottom: 0.5rem;
+    }
+
+    .custom-file-upload {
+      border: 1px solid #FDF0D5;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      color: #FDF0D5;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    .custom-file-upload:hover {
+      background-color: #FDF0D5;
+      color: #780000;
+    }
+
+    .fixed-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: #780000;
+      padding: 1rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo-container {
+      max-width: 150px;
+    }
+
+    .logo-container img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body style="background-color: #780000;">
+
+<header class="fixed-navbar">
+  <div class="container">
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="MYDO Logo">
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="section" style="margin-top: 120px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="form-section">
+          <h3 class="text-center mb-4" style="color: #FDF0D5;">Club Registration Form</h3>
+          <form onsubmit="return handleSubmit(event)">
+            <!-- Basic Information -->
+            <div class="mb-4">
+              <label class="form-label">Organization Name *</label>
+              <input type="text" class="form-control" required>
+
+              <label class="form-label">Organization Type *</label>
+              <select class="form-control" required>
+                <option value="">Select Type</option>
+                <option value="cultural">Cultural</option>
+                <option value="technology">Technology</option>
+                <option value="academic">Academic</option>
+                <option value="social">Social</option>
+                <option value="professional">Professional</option>
+                <option value="service">Community Service</option>
+              </select>
+
+              <label class="form-label">Contact Person Name *</label>
+              <input type="text" class="form-control" required>
+
+              <label class="form-label">Contact Email *</label>
+              <input type="email" class="form-control" required>
+
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" required>
+            </div>
+
+            <!-- Organization Details -->
+            <div class="mb-4">
+              <label class="form-label">Organization Mission/Purpose *</label>
+              <textarea class="form-control" rows="3" required></textarea>
+
+              <label class="form-label">Active Members *</label>
+              <select class="form-control" required>
+                <option value="">Select Range</option>
+                <option value="<50"><50</option>
+                <option value="50-100">50-100</option>
+                <option value="100-150">100-150</option>
+                <option value="150-200">150-200</option>
+                <option value="200-500">200-500</option>
+                <option value="500+">500+</option>
+              </select>
+
+              <label class="form-label">Main Activities</label>
+              <div class="form-check" style="color: #FDF0D5;">
+                <input class="form-check-input" type="checkbox" value="workshops">
+                <label class="form-check-label">Workshops</label>
+              </div>
+              <div class="form-check" style="color: #FDF0D5;">
+                <input class="form-check-input" type="checkbox" value="social">
+                <label class="form-check-label">Social Events</label>
+              </div>
+              <div class="form-check" style="color: #FDF0D5;">
+                <input class="form-check-input" type="checkbox" value="conferences">
+                <label class="form-check-label">Conferences</label>
+              </div>
+              <div class="form-check" style="color: #FDF0D5;">
+                <input class="form-check-input" type="checkbox" value="networking">
+                <label class="form-check-label">Networking Events</label>
+              </div>
+            </div>
+
+            <!-- File Uploads -->
+            <div class="mb-4">
+              <div class="mb-3">
+                <label class="form-label">Organization Logo *</label>
+                <label class="custom-file-upload d-block">
+                  <input type="file" accept="image/*" style="display: none;" required>
+                  Upload Logo
+                </label>
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label">Sponsorship Brochure</label>
+                <label class="custom-file-upload d-block">
+                  <input type="file" accept=".pdf,.doc,.docx" style="display: none;">
+                  Upload Brochure
+                </label>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Event Photos</label>
+                <label class="custom-file-upload d-block">
+                  <input type="file" accept="image/*" multiple style="display: none;">
+                  Upload Photos
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="btn w-100" style="background-color: #FDF0D5; color: #780000;">Register Organization</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+<script>
+function handleSubmit(event) {
+  event.preventDefault();
+  alert('Registration successful! We will review your application and contact you soon.');
+  window.location.href = 'index.html';
+  return false;
+}
+</script>
+
+</body>
+</html>
